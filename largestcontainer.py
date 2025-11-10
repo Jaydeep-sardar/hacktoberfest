@@ -6,6 +6,7 @@ def maxArea(height):
         # Calculate the area
         area = min(height[left], height[right]) * (right - left)
         max_area = max(max_area, area)
+        max_area = max(max_area, area)
         
         # Move the pointer pointing to the shorter line
         if height[left] < height[right]:
